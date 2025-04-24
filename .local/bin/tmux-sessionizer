@@ -8,7 +8,10 @@ if [[ $TMUX ]]; then
         exit 0
     fi
 
-    selected_name=$(realpath -s --relative-to="/home/byut" $selected)
+    selected_name=$(realpath -s --relative-to="/home/byut" $selected \
+        | sed -r 's/\.dotfiles/dotfiles/g' \
+        | sed -r 's/\.config/config/g')
+
     if ! tmux has-session -t "^$selected_name$" 2> /dev/null; then
         tmux new -ds "$selected_name" -c $selected
     fi
