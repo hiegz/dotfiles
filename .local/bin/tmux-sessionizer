@@ -2,7 +2,7 @@
 
 if [[ $TMUX ]]; then
     selected=$(find $HOME/.config $HOME/.dotfiles $HOME/temp $HOME/github \
-	    -maxdepth 1 -type d -name "[[:alnum:]]*" | fzf)
+	    -maxdepth 2 -type d -name "[[:alnum:]]*" | fzf)
 
     if [[ -z $selected ]]; then
         exit 0
