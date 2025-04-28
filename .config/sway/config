@@ -217,7 +217,6 @@ bindsym $mod+Shift+Control+j move workspace to output down
 bindsym $mod+Shift+Control+k move workspace to output up
 bindsym $mod+Shift+Control+l move workspace to output right
 
-
 #
 # Scratchpad
 #
@@ -227,6 +226,16 @@ bindsym $mod+Shift+Control+l move workspace to output right
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+bindsym $mod+Shift+p mode "scratchpad"
+
+mode "scratchpad" {
+    bindsym e [app_id="com.github.wwmm.easyeffects"] scratchpad show; mode "default"
+    bindsym p [app_id="org.pulseaudio.pavucontrol"]  scratchpad show; mode "default"
+    bindsym b [app_id="thunderbird"]                 scratchpad show; mode "default"
+    bindsym t [app_id="org.telegram.desktop"]        scratchpad show; mode "default"
+
+    bindsym Escape mode "default"
+}
 
 #
 # Screenshot mode
