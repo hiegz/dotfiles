@@ -47,6 +47,9 @@ set $bordersize_floating 2
 set $primary  eDP-1
 set $external HDMI-A-1
 
+output $primary   pos 0    0 res 2880x1800
+output $secondary pos 2880 0 res 1980x1080
+
 bindswitch --reload --locked lid:on output $primary disable
 bindswitch --reload --locked lid:off output $primary enable
 
