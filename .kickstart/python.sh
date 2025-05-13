@@ -8,4 +8,5 @@ paru -S --noconfirm --needed \
     python-black             \
     python-numpy             \
     python-scipy             \
+    python-pandas            \
     pyright
