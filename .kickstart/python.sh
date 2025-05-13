@@ -6,4 +6,6 @@ paru -S --noconfirm --needed \
     python-pipx              \
     python-poetry            \
     python-black             \
+    python-numpy             \
+    python-scipy             \
     pyright
