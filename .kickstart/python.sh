@@ -9,4 +9,5 @@ paru -S --noconfirm --needed \
     python-numpy             \
     python-scipy             \
     python-pandas            \
+    python-scikit-learn      \
     pyright
