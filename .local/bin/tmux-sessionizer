@@ -1,14 +1,14 @@
 #!/bin/bash
 
 if [[ $TMUX ]]; then
-    selected=$(find $HOME/.config $HOME/.dotfiles $HOME/temp $HOME/github $HOME/aur \
+    selected=$(find $HOME/* $HOME/.* \
 	    -maxdepth 2 -type d -name "[[:alnum:]]*" | fzf)
 
     if [[ -z $selected ]]; then
         exit 0
     fi
 
-    selected_name=$(realpath -s --relative-to="/home/byut" $selected \
+    selected_name=$(realpath -s --relative-to="$HOME" $selected \
         | sed -r 's/\.dotfiles/dotfiles/g' \
         | sed -r 's/\.config/config/g')
 
