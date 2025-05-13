@@ -11,8 +11,9 @@
 export _JAVA_AWT_WM_NONREPARENTING=1
 export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
 
-# Enable Wayland for Tor Browser
+# Enable Wayland
 export MOZ_ENABLE_WAYLAND=1
+export QT_QPA_PLATFORM=wayland
 
 # ZVM
 export ZVM_INSTALL="$HOME/.zvm/self"
