@@ -11,4 +11,5 @@ paru -S --noconfirm --needed \
     python-pandas            \
     python-scikit-learn      \
     python-dbus              \
+    python-matplotlib        \
     pyright
