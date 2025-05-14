@@ -4,4 +4,5 @@ paru -S --noconfirm --needed \
     linux-headers            \
     zfs-dkms                 \
     openssh                  \
-    ufw
+    ufw                      \
+    net-tools
