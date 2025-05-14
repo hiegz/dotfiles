@@ -10,4 +10,5 @@ paru -S --noconfirm --needed \
     python-scipy             \
     python-pandas            \
     python-scikit-learn      \
+    python-dbus              \
     pyright
