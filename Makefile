@@ -2,6 +2,7 @@ default:
 
 kickstart:    \
 	bash      \
+	ruby	  \
 	lua       \
 	clang     \
 	cmake     \
@@ -20,6 +21,9 @@ kickstart:    \
 
 bash:
 	@bash $(HOME)/.kickstart/bash.sh
+
+ruby:
+	@bash $(HOME)/.kickstart/ruby.sh
 
 lua:
 	@bash $(HOME)/.kickstart/lua.sh
