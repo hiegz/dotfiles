@@ -30,6 +30,7 @@ paru -S --noconfirm --needed \
     thunar                   \
     google-chrome            \
     atril                    \
+    calibre                  \
     bemenu-wayland           \
     bemenu 		             \
     grimshot-bin-sway        \
