@@ -29,6 +29,7 @@ paru -S --noconfirm --needed \
     brightnessctl            \
     thunar                   \
     google-chrome            \
+    atril                    \
     bemenu-wayland           \
     bemenu 		             \
     grimshot-bin-sway        \
