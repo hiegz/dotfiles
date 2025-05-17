@@ -5,4 +5,5 @@ paru -S --noconfirm --needed \
     zfs-dkms                 \
     openssh                  \
     ufw                      \
+    whois                    \
     net-tools
