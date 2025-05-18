@@ -12,5 +12,6 @@ paru -S --noconfirm --needed \
     python-scikit-learn      \
     python-dbus              \
     python-matplotlib        \
+    python-tensorflow        \
     python-pyqt6             \
     pyright
