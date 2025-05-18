@@ -15,6 +15,7 @@ paru -S --noconfirm --needed \
     ttf-ubuntu-mono-nerd     \
     ttf-hack                 \
     qt5-base                 \
+    qt5-wayland              \
     qt6-base                 \
     qt6-wayland              \
     gtk3                     \
