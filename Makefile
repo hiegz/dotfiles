@@ -73,5 +73,8 @@ desktop:
 oh-my-zsh:
 	@bash $(HOME)/.kickstart/oh-my-zsh.sh
 
+virtual-mic:
+	@bash $(HOME)/.kickstart/virtual-mic.sh
+
 um3402ya-fix:
 	@bash $(HOME)/.kickstart/um3402ya-fix.sh
