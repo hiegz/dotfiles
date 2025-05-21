@@ -6,4 +6,5 @@ paru -S --noconfirm --needed \
     openssh                  \
     ufw                      \
     whois                    \
+    networkmanager-openvpn   \
     net-tools
