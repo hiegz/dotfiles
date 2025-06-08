@@ -14,4 +14,5 @@ paru -S --noconfirm --needed \
     python-matplotlib        \
     python-tensorflow        \
     python-pyqt6             \
+    python-tabulate          \
     pyright
