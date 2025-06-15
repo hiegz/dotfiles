@@ -13,10 +13,8 @@ kickstart:    \
 	node 	  \
 	rust      \
 	paru      \
-	system    \
 	sound     \
 	video     \
-	desktop   \
 	oh-my-zsh
 
 bash:
@@ -58,17 +56,50 @@ rust:
 paru:
 	@bash $(HOME)/.kickstart/paru.sh
 
-system:
-	@bash $(HOME)/.kickstart/system.sh
+zfs:
+	@bash $(HOME)/.kickstart/zfs.sh
+
+dunst:
+	@bash $(HOME)/.kickstart/dunst.sh
+
+ufw:
+	@bash $(HOME)/.kickstart/ufw.sh
+
+ssh:
+	@bash $(HOME)/.kickstart/ssh.sh
+
+network:
+	@bash $(HOME)/.kickstart/network.sh
+
+qt:
+	@bash $(HOME)/.kickstart/qt.sh
+
+gtk:
+	@bash $(HOME)/.kickstart/gtk.sh
+
+fonts:
+	@bash $(HOME)/.kickstart/fonts.sh
+
+themes:
+	@bash $(HOME)/.kickstart/themes.sh
+
+gui-apps:
+	@bash $(HOME)/.kickstart/gui-apps.sh
+
+tui-apps:
+	@bash $(HOME)/.kickstart/tui-apps.sh
+
+wayland:
+	@bash $(HOME)/.kickstart/wayland.sh
+
+sway:
+	@bash $(HOME)/.kickstart/sway.sh
 
 sound:
 	@bash $(HOME)/.kickstart/sound.sh
 
 video:
 	@bash $(HOME)/.kickstart/video.sh
-
-desktop:
-	@bash $(HOME)/.kickstart/desktop.sh
 
 oh-my-zsh:
 	@bash $(HOME)/.kickstart/oh-my-zsh.sh
