@@ -43,3 +43,7 @@ alias tma="(tmux attach-session || tmux new-session -s $USER -c ~) &> /dev/null"
 
 alias config="git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME"
 config config --local status.showUntrackedFiles no
+
+# FUCK BILL GATES IN HIS ASS
+alias fbgiha="find . -name '*:Zone.Identifier' -type f -delete"
+alias rmzi=fbgiha
