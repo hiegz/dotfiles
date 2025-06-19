@@ -1,5 +1,9 @@
 default:
 
+#
+# Languages
+#
+
 bash:
 	@bash $(HOME)/.kickstart/bash.sh
 
@@ -36,14 +40,22 @@ latex:
 rust:
 	@bash $(HOME)/.kickstart/rust.sh
 
+#
+# Tools
+#
+
 paru:
 	@bash $(HOME)/.kickstart/paru.sh
 
-desktop:
-	@bash $(HOME)/.kickstart/desktop.sh
-
 oh-my-zsh:
 	@bash $(HOME)/.kickstart/oh-my-zsh.sh
+
+#
+# Other
+#
+
+desktop:
+	@bash $(HOME)/.kickstart/desktop.sh
 
 um3402ya-fix:
 	@bash $(HOME)/.kickstart/um3402ya-fix.sh
