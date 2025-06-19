@@ -47,6 +47,9 @@ rust:
 paru:
 	@bash $(HOME)/.kickstart/paru.sh
 
+neovim:
+	@bash $(HOME)/.kickstart/neovim.sh
+
 oh-my-zsh:
 	@bash $(HOME)/.kickstart/oh-my-zsh.sh
 
