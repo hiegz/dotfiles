@@ -39,9 +39,6 @@ rust:
 paru:
 	@bash $(HOME)/.kickstart/paru.sh
 
-system:
-	@bash $(HOME)/.kickstart/system.sh
-
 desktop:
 	@bash $(HOME)/.kickstart/desktop.sh
 
