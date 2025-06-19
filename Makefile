@@ -42,12 +42,6 @@ paru:
 system:
 	@bash $(HOME)/.kickstart/system.sh
 
-sound:
-	@bash $(HOME)/.kickstart/sound.sh
-
-video:
-	@bash $(HOME)/.kickstart/video.sh
-
 desktop:
 	@bash $(HOME)/.kickstart/desktop.sh
 
