@@ -1,24 +1,5 @@
 default:
 
-kickstart:    \
-	bash      \
-	ruby	  \
-	lua       \
-	clang     \
-	cmake     \
-	python    \
-	zig       \
-	java      \
-	php       \
-	node 	  \
-	rust      \
-	paru      \
-	system    \
-	sound     \
-	video     \
-	desktop   \
-	oh-my-zsh
-
 bash:
 	@bash $(HOME)/.kickstart/bash.sh
 
