@@ -13,6 +13,9 @@ ruby:
 lua:
 	@bash $(HOME)/.kickstart/lua.sh
 
+css:
+	@bash $(HOME)/.kickstart/css.sh
+
 clang:
 	@bash $(HOME)/.kickstart/clang.sh
 
