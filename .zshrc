@@ -22,12 +22,8 @@ fi
 
 #  ==========================================================================  #
 
-alias sc="source $HOME/.zshrc"
-
 alias ctest="env GTEST_COLOR=1 ctest --output-on-failure"
 
-alias g="git"
-alias l="less"
 alias vim="nvim"
 
 alias rm="rm -i"
