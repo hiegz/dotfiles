@@ -222,6 +222,13 @@ bindsym $mod+Shift+Control+k move workspace to output up
 bindsym $mod+Shift+Control+l move workspace to output right
 
 #
+# Backlight control
+# ---
+
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp   exec brightnessctl set +5%
+
+#
 # Scratchpad
 #
 # Sway has a "scratchpad", which is a bag of holding for windows. You can send
