@@ -15,14 +15,18 @@ git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME checkout -f
 source $HOME/.zshrc
 ```
 
+## Notes
+
+Fixes and workarounds that I don't want to have to look for twice.
+
 ### Keep WSL running
 
 By default Windows will stop WSL after all Terminal windows are closed. The
 workaround is to simply run `wsl --exec dbus-launch true`
 
-### Workaround: cryptsetup password prompt not shown
+### `cryptsetup` password prompt not shown
 
-The cryptsetup password prompt is not shown on boot. The reason is not very
+The `cryptsetup` password prompt is not shown on boot. The reason is not very
 clear but there seems to be a workaround:
 
 - Set `GRUB_GFXPAYLOAD_LINUX=text` in `/etc/default/grub`
