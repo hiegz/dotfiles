@@ -8,9 +8,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 nvm install node
-npm install -g \
+
+paru -S --noconfirm --needed \
     typescript-language-server \
-    @fsouza/prettierd \
+    prettierd \
     prettier
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
