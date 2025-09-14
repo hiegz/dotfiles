@@ -71,3 +71,6 @@ desktop:
 
 um3402ya-fix:
 	@bash $(HOME)/.kickstart/um3402ya-fix.sh
+
+npiperelay:
+	@bash $(HOME)/.kickstart/npiperelay.sh
