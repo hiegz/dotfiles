@@ -24,6 +24,22 @@ fi
 
 alias ctest="env GTEST_COLOR=1 ctest --output-on-failure"
 
+nvim() {
+    if ! command -v npiperelay.exe &> /dev/null; then
+        echo "error: npiperelay not found"
+        echo "hint:  run 'make npiperelay' inside $HOME"
+        exit 1
+    fi
+
+    if ! pidof socat > /dev/null 2>&1; then
+     [ -e /tmp/discord-ipc-0 ] && rm -f /tmp/discord-ipc-0
+     socat UNIX-LISTEN:/tmp/discord-ipc-0,fork \
+         EXEC:"npiperelay.exe //./pipe/discord-ipc-0" 2>/dev/null &
+    fi
+
+    command nvim "$@"
+}
+
 alias vim="nvim"
 
 alias rm="rm -i"
