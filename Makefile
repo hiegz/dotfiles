@@ -7,6 +7,9 @@ default:
 bash:
 	@bash $(HOME)/.kickstart/bash.sh
 
+go:
+	@bash $(HOME)/.kickstart/go.sh
+
 ruby:
 	@bash $(HOME)/.kickstart/ruby.sh
 
