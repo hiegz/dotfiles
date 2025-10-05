@@ -292,6 +292,9 @@ mode "exit" {
     bindsym p exec systemctl suspend; mode "default"
     bindsym l exec $lock; mode "default"
 
+    bindsym n output $primary enable;  mode "default"
+    bindsym f output $primary disable; mode "default"
+
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
