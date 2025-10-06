@@ -49,6 +49,9 @@ latex:
 rust:
 	@bash $(HOME)/.kickstart/rust.sh
 
+typst:
+	@bash $(HOME)/.kickstart/typst.sh
+
 #
 # Tools
 #
