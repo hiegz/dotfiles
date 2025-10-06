@@ -45,7 +45,6 @@ paru -S --noconfirm --needed \
     calibre \
     bemenu-wayland \
     bemenu \
-    grimshot-bin-sway \
     tmux \
     fzf \
     imv \
@@ -53,6 +52,7 @@ paru -S --noconfirm --needed \
     dunst \
     gtklock \
     swaybg \
+    sway-contrib \
     sway
 
 systemctl --user enable --now pipewire.service

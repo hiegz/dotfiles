@@ -2,5 +2,5 @@
 
 paru -S --noconfirm --needed \
     typst \
-    tinymist
-
+    tinymist \
+    typstyle
