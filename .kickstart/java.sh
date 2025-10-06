@@ -5,4 +5,5 @@ paru -S --noconfirm --needed \
     jdk-openjdk              \
     openjdk-doc              \
     openjdk-src              \
+    checkstyle               \
     jdtls
