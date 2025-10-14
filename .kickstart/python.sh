@@ -16,4 +16,5 @@ paru -S --noconfirm --needed \
     python-pyqt6             \
     python-tabulate          \
     python-treelib           \
+    python-pyspark           \
     pyright
