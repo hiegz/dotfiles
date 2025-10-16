@@ -77,3 +77,6 @@ um3402ya-fix:
 
 npiperelay:
 	@bash $(HOME)/.kickstart/npiperelay.sh
+
+cups:
+	@bash $(HOME)/.kickstart/cups.sh
