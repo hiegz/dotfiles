@@ -3,4 +3,4 @@
 paru -S --noconfirm --needed \
     typst \
     tinymist \
-    typstyle
+    typstyle-bin
