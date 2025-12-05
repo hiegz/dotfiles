@@ -7,6 +7,11 @@ function join_by {
     fi
 }
 
-join_by " | " \
-    "Battery: $(($(cat /sys/class/power_supply/BATT/charge_now) * 100 / $(cat /sys/class/power_supply/BATT/charge_full)))%" \
-    "$(date +"%a %F %H:%M")"
+result="$(date +"%a %F %H:%M")"
+
+if [ "$(cat /sys/class/power_supply/AC/online)" -eq 0 ]; then
+    battery_info="Battery: $(($(cat /sys/class/power_supply/BATT/charge_now) * 100 / $(cat /sys/class/power_supply/BATT/charge_full)))%"
+    result="$battery_info | $result"
+fi
+
+echo $result
