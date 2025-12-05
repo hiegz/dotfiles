@@ -10,8 +10,11 @@ if command -v paru &> /dev/null; then
     exit 0
 fi
 
-rm -rdf $HOME/.kickstart/paru
-git clone https://aur.archlinux.org/paru $HOME/.kickstart/paru
+sudo pacman -S --noconfirm gcc pkg-config
+
+if [ ! -d "$HOME/.kickstart/paru" ]; then
+	git clone https://aur.archlinux.org/paru $HOME/.kickstart/paru
+fi
 cd $HOME/.kickstart/paru
+git pull
 makepkg -si --noconfirm
-rm -rdf $HOME/.kickstart/paru
