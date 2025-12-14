@@ -65,6 +65,9 @@ neovim:
 oh-my-zsh:
 	@bash $(HOME)/.kickstart/oh-my-zsh.sh
 
+yt-dlp:
+	@bash $(HOME)/.kickstart/yt-dlp.sh
+
 #
 # Other
 #
