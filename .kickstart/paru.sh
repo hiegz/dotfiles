@@ -10,7 +10,7 @@ if command -v paru &> /dev/null; then
     exit 0
 fi
 
-sudo pacman -S --noconfirm gcc pkg-config
+sudo pacman -S --noconfirm --needed gcc pkg-config
 
 if [ ! -d "$HOME/.kickstart/paru" ]; then
 	git clone https://aur.archlinux.org/paru $HOME/.kickstart/paru
