@@ -12,9 +12,9 @@ fi
 
 sudo pacman -S --noconfirm --needed gcc pkg-config
 
-if [ ! -d "$HOME/.kickstart/paru" ]; then
-	git clone https://aur.archlinux.org/paru $HOME/.kickstart/paru
+if [ ! -d "$HOME/.kickstart/paru-git" ]; then
+	git clone https://aur.archlinux.org/paru-git $HOME/.kickstart/paru-git
 fi
-cd $HOME/.kickstart/paru
+cd $HOME/.kickstart/paru-git
 git pull
 makepkg -si --noconfirm
