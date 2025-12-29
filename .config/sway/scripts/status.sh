@@ -9,7 +9,7 @@ function join_by {
 
 result="$(date +"%a %F %H:%M")"
 
-if [ "$(cat /sys/class/power_supply/AC/online)" -eq 0 ]; then
+if [[ "$(cat /etc/hostname)" == "zenbook" ]]; then
     battery_info="Battery: $(($(cat /sys/class/power_supply/BATT/charge_now) * 100 / $(cat /sys/class/power_supply/BATT/charge_full)))%"
     result="$battery_info | $result"
 fi
