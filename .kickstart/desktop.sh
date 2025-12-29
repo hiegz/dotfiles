@@ -20,6 +20,7 @@ paru -S --noconfirm --needed \
     xdg-desktop-portal-wlr \
     xdg-desktop-portal \
     noto-fonts \
+    noto-fonts-cjk \
     noto-fonts-emoji \
     ttf-ubuntu-mono-nerd \
     ttf-hack \
