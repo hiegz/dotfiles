@@ -68,6 +68,9 @@ oh-my-zsh:
 yt-dlp:
 	@bash $(HOME)/.kickstart/yt-dlp.sh
 
+zfs-update:
+	@bash $(HOME)/.kickstart/zfs-update.sh
+
 #
 # Other
 #
