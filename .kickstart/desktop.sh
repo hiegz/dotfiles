@@ -41,7 +41,7 @@ paru -S --noconfirm --needed \
     nwg-look \
     brightnessctl \
     thunar \
-    firefox \
+    zen-browser-bin \
     atril \
     calibre \
     bemenu-wayland \
