@@ -81,6 +81,9 @@ desktop:
 um3402ya-fix:
 	@bash $(HOME)/.kickstart/um3402ya-fix.sh
 
+geforce-gtx-1060:
+	@bash $(HOME)/.kickstart/geforce-gtx-1060.sh
+
 npiperelay:
 	@bash $(HOME)/.kickstart/npiperelay.sh
 
