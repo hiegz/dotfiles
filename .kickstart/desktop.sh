@@ -48,7 +48,9 @@ paru -S --noconfirm --needed \
     bemenu \
     tmux \
     fzf \
-    imv \
+    ristretto \
+    vlc \
+    vlc-plugin-ffmpeg \
     ghostty \
     dunst \
     gtklock \
