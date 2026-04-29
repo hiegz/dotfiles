@@ -7,6 +7,7 @@ if ! command -v paru &>/dev/null; then
 fi
 
 paru -S --noconfirm --needed \
+    less \
     wl-mirror \
     wl-clipboard \
     xorg-xwayland \
