@@ -40,6 +40,8 @@ paru -S --noconfirm --needed \
     lxappearance \
     nwg-look \
     brightnessctl \
+    gvfs \
+    sshfs \
     thunar \
     zen-browser-bin \
     atril \
