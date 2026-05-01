@@ -8,6 +8,7 @@ fi
 
 paru -S --noconfirm --needed \
     less \
+    htop \
     wl-mirror \
     wl-clipboard \
     xorg-xwayland \
