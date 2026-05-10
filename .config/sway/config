@@ -58,7 +58,16 @@ bindswitch --reload --locked lid:off output $primary enable
 # ---
 
 set $term ghostty
-set $menu BEMENU_BACKEND=wayland bemenu-run               \
+set $lock gtklock
+# set $lock waylock -log-level error \
+#     -fork-on-lock -ignore-empty-password \
+#     -init-color 0x000000 -input-color 0x222222 -fail-color 0xff0000
+
+#
+# Application Menu Parameters
+#
+
+set $menu                                                 \
     --tb  "$background_active" --tf  "$foreground_active" \
     --fb  "$background"        --ff  "$foreground"        \
     --nb  "$background"        --nf  "$foreground"        \
@@ -69,10 +78,6 @@ set $menu BEMENU_BACKEND=wayland bemenu-run               \
     --scb "$background"        --scf "$foreground"        \
     --bdr "$border_inactive"                              \
     --fn "$fontname $fontsize" --hp 9 -m "all"
-set $lock gtklock
-# set $lock waylock -log-level error \
-#     -fork-on-lock -ignore-empty-password \
-#     -init-color 0x000000 -input-color 0x222222 -fail-color 0xff0000
 
 #
 # Touchpad
@@ -168,7 +173,7 @@ bindsym $mod+Shift+c kill
 bindsym $mod+Shift+r reload
 # bindsym $mod+Shift+BackSpace exec sway exit
 bindsym $mod+Shift+Return exec $term
-bindsym $mod+p exec $menu
+bindsym $mod+p exec $HOME/.config/sway/scripts/app-launcher.sh $menu
 
 bindsym $mod+a focus parent
 
@@ -237,16 +242,7 @@ bindsym XF86MonBrightnessUp   exec brightnessctl set +5%
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
-bindsym $mod+Shift+p mode "scratchpad"
-
-mode "scratchpad" {
-    bindsym e [app_id="com.github.wwmm.easyeffects"] scratchpad show; mode "default"
-    bindsym p [app_id="org.pulseaudio.pavucontrol"]  scratchpad show; mode "default"
-    bindsym b [app_id="thunderbird"]                 scratchpad show; mode "default"
-    bindsym t [app_id="org.telegram.desktop"]        scratchpad show; mode "default"
-
-    bindsym Escape mode "default"
-}
+bindsym $mod+Shift+p exec $HOME/.config/sway/scripts/scratchpad.sh $menu
 
 #
 # Screenshot mode
