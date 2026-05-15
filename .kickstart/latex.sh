@@ -3,4 +3,5 @@
 paru -S --noconfirm --needed \
     texlive                  \
     texlive-lang             \
-    texlab
+    texlab                   \
+    biber
