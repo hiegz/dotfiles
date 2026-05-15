@@ -48,7 +48,7 @@ paru -S --noconfirm --needed \
     gvfs \
     sshfs \
     thunar \
-    zen-browser-bin \
+    google-chrome \
     atril \
     calibre \
     bemenu-wayland \
