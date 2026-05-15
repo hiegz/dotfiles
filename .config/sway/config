@@ -125,6 +125,7 @@ exec_always $HOME/.config/sway/scripts/background.sh
 # ---
 
 exec_always dunst
+exec nm-applet --no-agent
 exec swayidle -w \
     before-sleep "$lock"
 

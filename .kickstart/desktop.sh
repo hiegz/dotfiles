@@ -7,6 +7,9 @@ if ! command -v paru &>/dev/null; then
 fi
 
 paru -S --noconfirm --needed \
+    networkmanager \
+    network-manager-applet \
+    networkmanager-openvpn \
     less \
     htop \
     wl-mirror \
