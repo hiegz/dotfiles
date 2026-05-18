@@ -10,7 +10,10 @@ if [[ $TMUX ]]; then
 
     selected_name=$(realpath -s --relative-to="$HOME" $selected \
         | sed -r 's/\.dotfiles/dotfiles/g' \
-        | sed -r 's/\.config/config/g')
+        | sed -r 's/\.config/config/g' \
+        | sed -r 's/\./_/g')
+
+    echo $selected_name
 
     if ! tmux has-session -t "^$selected_name$" 2> /dev/null; then
         tmux new -ds "$selected_name" -c $selected
