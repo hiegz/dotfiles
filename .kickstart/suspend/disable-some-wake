@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Linux has a file /proc/acpi/wakeup that sets the state of devices that can
+# wake up from the suspended state. You can issue the command:
+#
+# cat /proc/acpi/wakeup
+#
+# PS2K: PS/2 keyboard
+# PS2M: PS/2 mouse
+# PWRB or PBTN: Power button
+# SLPB: Sleep button
+# LID: Laptop lid
+# RP0x or EXPx: PCIE slot #x (aka PCI Express Root Port #x)
+# EHCx or USBx: USB 2.0 (EHCI) chip
+# XHC: USB 3.0 (XHCI) chip
+# PEGx: PCI Express for Graphics slot #x
+# GLAN or IGBE: Gigabit Ethernet
+#
+# Linux maintains a directory of files to execute when it goes into suspend
+# state. This directory is
+#
+# /usr/lib/systemd/systemd-sleep
+#
+# Files in this directory have the owner:group of root:root and permissions 755.
+#
+# Now copy this file
+#
+# sudo cp disable-some-wake /usr/lib/systemd/system-sleep
+#
+# and change the permissions:
+#
+# sudo chmod 755 /usr/lib/systemd/system-sleep/disable-some-wake
+#
+# That’s it. You should be good for all eternity.
+
+case $1 in
+    pre)
+        # !!! MAKE SURE TO ADJUST THESE !!! #
+        declare -a devices=()
+
+        for device in "${devices[@]}"; do
+            if $(grep -qw ^${device}.*enabled /proc/acpi/wakeup); then
+                echo ${device} > /proc/acpi/wakeup
+            fi
+        done
+    ;;
+esac
