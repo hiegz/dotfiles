@@ -6,4 +6,5 @@ paru -S --noconfirm --needed \
     openjdk-doc              \
     openjdk-src              \
     checkstyle               \
+    java-debug               \
     jdtls
