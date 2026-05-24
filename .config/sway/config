@@ -35,10 +35,10 @@ set $background_inactive #222222
 # Borders & Gaps
 # ...
 
-set $innergapsize        7
-set $outergapsize        4
-set $bordersize_tiling   2
-set $bordersize_floating 2
+set $innergapsize        0
+set $outergapsize        0
+set $bordersize_tiling   0
+set $bordersize_floating 0
 
 #
 # Primary and External Outputs
@@ -77,6 +77,7 @@ set $menu                                                 \
     --ab  "$background"        --af  "$foreground"        \
     --scb "$background"        --scf "$foreground"        \
     --bdr "$border_inactive"                              \
+    --bottom                                              \
     --fn "$fontname $fontsize" --hp 9 -m "all"
 
 #
@@ -144,7 +145,7 @@ floating_modifier $mod normal
 # Workspaces
 # ---
 
-set $ws0  "0: ~"
+set $ws0  "0"
 set $ws1  "1"
 set $ws2  "2"
 set $ws3  "3"
@@ -311,7 +312,7 @@ bar {
     height $fontheight
     font pango:$fontname $fontsize
     status_command while $HOME/.config/sway/scripts/status.sh; do sleep 15; done
-    position    top
+    position    bottom
     tray_output none
 
     colors {
