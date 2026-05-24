@@ -18,4 +18,5 @@ paru -S --noconfirm --needed \
     python-treelib           \
     python-pyspark           \
     python-click             \
+    python-tqdm              \
     pyright
