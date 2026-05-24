@@ -17,4 +17,5 @@ paru -S --noconfirm --needed \
     python-tabulate          \
     python-treelib           \
     python-pyspark           \
+    python-click             \
     pyright
