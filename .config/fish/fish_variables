@@ -1,0 +1,7 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR __fish_initialized:4300
+SETUVAR fish_greeting:
+SETUVAR fish_user_paths:/home/hiegz/\x2elocal/bin
+
+SETUVAR MOZ_ENABLE_WAYLAND:1
