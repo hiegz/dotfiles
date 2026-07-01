@@ -17,3 +17,8 @@ if status is-interactive
         fish_add_path $HOME/go/bin
     end
 end
+
+# ZVM
+set -gx ZVM_INSTALL "$HOME/.zvm/self"
+set -gx PATH $PATH "$HOME/.zvm/bin"
+set -gx PATH $PATH "$ZVM_INSTALL/"
