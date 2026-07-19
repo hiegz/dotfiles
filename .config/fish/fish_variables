@@ -1,7 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR MOZ_ENABLE_WAYLAND:1
-SETUVAR SDL_VIDEODRIVER:wayland
 SETUVAR __fish_initialized:4300
 SETUVAR fish_greeting:
 SETUVAR fish_user_paths:/home/hiegz/go/bin\x1e/home/hiegz/\x2elocal/bin

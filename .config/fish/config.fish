@@ -22,3 +22,7 @@ end
 set -gx ZVM_INSTALL "$HOME/.zvm/self"
 set -gx PATH $PATH "$HOME/.zvm/bin"
 set -gx PATH $PATH "$ZVM_INSTALL/"
+
+# SDL
+set -gx SDL_VIDEODRIVER "wayland"
+set -gx SDL_VIDEO_DRIVER "wayland"
